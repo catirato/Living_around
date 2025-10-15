@@ -1,0 +1,52 @@
+                                         /* Página_Index */
+
+
+/* Edição do cabeçalho */
+ h1 {                        /*Edição do título da página */
+    color: white;
+      font-family:'Josefin Slab', serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 85px;
+      line-height: 100%;
+      letter-spacing: 0;
+      }
+
+
+/* --- Header --- */
+header {
+    width: 1466px;                  /* largura fixa */
+  height: 816px;                  /* altura fixa */
+text-align: center;
+  padding: 60px 20px 30px;
+  border-bottom: 1px solid #ccc;
+  background-image: url("Imagens/56d8144cbded6b64756f769dfd17493fdca80df2.jpg"); /* Inserir imagem no cabeçalho */
+  background-size: cover;        /* A imagem enche a área total */
+  background-repeat: no-repeat;  /* Previne o tiling */
+  background-position: center;   /* Centrar a imagem */
+ } 
+  
+/* --- Estilos da Navegação --- */
+/* Torna todos os links pretos e em negrito */
+  .nav-link {
+    font-family: "Jura", sans-serif;
+      font-optical-sizing: auto;
+     font-weight: 700;
+     font-style: bold;
+        color: black;              /* cor do texto */
+      font-size: 25px;
+      text-decoration: none;     /* sem sublinhado */
+      margin-right: 20px;        /* espaçamento entre itens */
+  }
+
+  /* Mantém o link ativo também preto */
+  .nav-link.active {
+    color: black !important;
+    font-weight: bold;
+  }
+
+  /* Opcional: remove o sublinhado e adiciona efeito hover */
+  .nav-link:hover {
+    text-decoration: none;
+    color: #333; /* ligeiramente mais escuro ao passar o rato */
+  }
