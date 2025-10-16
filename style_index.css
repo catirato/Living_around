@@ -1,0 +1,152 @@
+
+/* Definições do container de imagem */
+.hero-container {
+      position: relative;
+      text-align: center;
+    }
+    
+    /* Definições da imagem do container */
+    #indexImage {
+      width: 100%;
+      height: auto;
+      display: block;
+      width: 1440px;                  /* largura fixa */
+  height: 816px;                  /* altura fixa */
+  background-size: cover;        /* A imagem enche a área total */
+  background-repeat: no-repeat;  /* Previne o tiling */
+  background-position: center;   /* Centrar a imagem */
+    }
+
+    /* Definições da NavBar */
+    .navbar-overlay {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      background: transparent; /* background transparente */
+      border-radius: 8px;
+      padding: 0.5rem 1rem;
+    }
+    .navbar-nav {
+      display: flex;
+      gap: 1.5rem; /* espaço entre itens do menu */
+      list-style: none; /* tirar os bullets */
+      margin-bottom: 0; /* remover espaço extra */
+    }
+
+    .nav-link {
+      color: #000; /* cor do texto */
+      text-decoration: none;
+      font-weight: 700;
+      font-family: "Jura", sans-serif; /* tipo de letra */
+      font-optical-sizing: auto;
+      font-style: bold;
+    }
+    .nav-link:hover {
+      text-decoration: underline; /* opção de passar a sublinhado quando passamos o rato por cima */
+    }
+
+  /* Definições do Texto */
+   #textoliving {     
+position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      font-weight: bold;
+      background: transparent; /* optional dark overlay for readability */
+      padding: 0.5rem 1rem;
+      color: white;
+      font-family:'Josefin Slab', serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 85px;
+      line-height: 100%;
+     white-space: nowrap; /* previne que o texto colapse para outra linha */
+    }
+
+    /* definições do container amarelo */
+#containeramarelo { 
+position: relative; /* com esta opção o que está dentro será movido relativamente a ele */
+width: 1440px;
+height: 569px;
+background-color: #b49b2c;
+opacity: 25%;
+}
+
+/* Definições do texto dentro do container amarelo */
+#textoviva { 
+position: absolute; /* posição relativamente ao container amarelo */
+font-family: "Jura", sans-serif; /* tipo de letra */
+font-weight: 400;
+font-style: Bold;
+font-size: 43px;
+letter-spacing: 20%;
+color: #000000;
+width: 575px;
+height: 152px;
+padding-left: 87px;
+padding-top: 200px; 
+z-index: 10; /* assegura que aparece à frente do fundo*/
+text-align: left;
+ }
+
+#trabremoto {
+position: absolute; /* posição relativamente ao container amarelo */
+font-family: "Jura", sans-serif; /* tipo de letra */
+font-weight: 700;
+font-style: Bold;
+font-size: 30px;
+letter-spacing: 0%;
+color: #000000;
+width: 300px;
+height: 29px;
+padding-left: 918px;
+padding-top: 160px; 
+z-index: 10; /* assegura que aparece à frente do fundo */
+}
+
+#indeed1 {
+position: absolute; /* posição relativamente ao container amarelo */
+font-family: "Jura", sans-serif; /* tipo de letra */
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+letter-spacing: 0%;
+color: #000000;
+width: 300px;
+height: 29px;
+padding-left: 834px;
+padding-top: 250px; 
+text-align: left;
+list-style: none; /* tirar os bullets */
+z-index: 10; /* ensures it appears above the background */
+   }
+
+#indeed2 {
+position: absolute; /* posição relativamente ao container amarelo */
+font-family: "Jura", sans-serif; /* tipo de letra */
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+letter-spacing: 0%;
+color: #000000;
+width: 300px;
+height: 29px;
+padding-left: 1152px;
+padding-top: 250px; 
+text-align: left;
+list-style: none; /* tirar os bullets */
+z-index: 10; /* ensures it appears above the background */
+   }
+
+#textoAbout{
+  flex: 1;                      
+  text-align: justify;          /* texto justificado */
+  font-size: 1.1em;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 5%;
+  z-index: 10;
+  text-align: left;
+  color: #000000;
+}
