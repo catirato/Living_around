@@ -1,52 +1,65 @@
-
-/* Definições do container de imagem */
-.hero-container {
+/* Edição do container com imagem */
+.image-container {
       position: relative;
       text-align: center;
+      max-width: 1466px;
     }
-    
-    /* Definições da imagem do container */
-    #indexImage {
+
+    /* Edição da imagem do container */
+    #imageIndex {
       width: 100%;
       height: auto;
       display: block;
-      width: 1440px;                  /* largura fixa */
   height: 816px;                  /* altura fixa */
   background-size: cover;        /* A imagem enche a área total */
   background-repeat: no-repeat;  /* Previne o tiling */
   background-position: center;   /* Centrar a imagem */
     }
 
-    /* Definições da NavBar */
-    .navbar-overlay {
+    /* Navbar styling */
+    .custom-navbar {
       position: absolute;
-      top: 15px;
-      right: 30px;
-      background: transparent; /* background transparente */
-      border-radius: 8px;
-      padding: 0.5rem 1rem;
-    }
-    .navbar-nav {
-      display: flex;
-      gap: 1.5rem; /* espaço entre itens do menu */
-      list-style: none; /* tirar os bullets */
-      margin-bottom: 0; /* remover espaço extra */
+      top: 20px;
+      right: 40px;
+      background: transparent;
+      text-align: right;
+      z-index: 10;
     }
 
-    .nav-link {
-      color: #000; /* cor do texto */
+    /* Texto da NavBar */
+    .custom-navbar a {
+      margin: 0 0.75rem;
+      color: #000;
       text-decoration: none;
       font-weight: 700;
-      font-family: "Jura", sans-serif; /* tipo de letra */
+      font-family: "Jura", sans-serif;
       font-optical-sizing: auto;
-      font-style: bold;
-    }
-    .nav-link:hover {
-      text-decoration: underline; /* opção de passar a sublinhado quando passamos o rato por cima */
+      font-size: 25px;
+      line-height: 118%;
+      letter-spacing: 0%;
+      transition: text-decoration 0.2s;
     }
 
-  /* Definições do Texto */
-   #textoliving {     
+    /* Estilo quando se passa com o rato por cima */
+    .custom-navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* NavBar responsiva */
+    @media (max-width: 768px) {
+      .custom-navbar {
+        top: 10px;
+        right: 15px;
+      }
+
+      .custom-navbar a {
+        font-size: 18px;
+        margin: 0 0.5rem;
+      }
+    }
+
+    /* Container com texto centrado */
+    #textoliving {     
 position: absolute;
       top: 50%;
       left: 50%;
@@ -64,31 +77,35 @@ position: absolute;
      white-space: nowrap; /* previne que o texto colapse para outra linha */
     }
 
-    /* definições do container amarelo */
+
+  /* definições do container amarelo */
 #containeramarelo { 
 position: relative; /* com esta opção o que está dentro será movido relativamente a ele */
-width: 1440px;
+width: 100%;
+max-width: 1466px;
 height: 569px;
-background-color: #b49b2c;
-opacity: 25%;
+background-color: rgba(180, 155, 44, 0.25); /* usar o RGBA em vex da opacidade porque os filhos irão herdar esse mesmo trait */
+margin: 0 auto;
 }
 
 /* Definições do texto dentro do container amarelo */
 #textoviva { 
 position: absolute; /* posição relativamente ao container amarelo */
+display: flex;
 font-family: "Jura", sans-serif; /* tipo de letra */
 font-weight: 400;
 font-style: Bold;
 font-size: 43px;
 letter-spacing: 20%;
 color: #000000;
-width: 575px;
-height: 152px;
-padding-left: 87px;
-padding-top: 200px; 
-z-index: 10; /* assegura que aparece à frente do fundo*/
 text-align: left;
+  align-items: center;     /* vertical centering */
+  height: 100%;            /* make it fill the column’s height */
+  text-align: left;      /* center multi-line text */
+max-width: 590px;
+padding-left: 2%;
  }
+
 
 #trabremoto {
 position: absolute; /* posição relativamente ao container amarelo */
@@ -98,11 +115,8 @@ font-style: Bold;
 font-size: 30px;
 letter-spacing: 0%;
 color: #000000;
-width: 300px;
-height: 29px;
 padding-left: 918px;
 padding-top: 160px; 
-z-index: 10; /* assegura que aparece à frente do fundo */
 }
 
 #indeed1 {
@@ -139,14 +153,82 @@ list-style: none; /* tirar os bullets */
 z-index: 10; /* ensures it appears above the background */
    }
 
-#textoAbout{
-  flex: 1;                      
-  text-align: justify;          /* texto justificado */
-  font-size: 1.1em;
-  line-height: 1.6;
-  padding: 20px;
-  border-radius: 5%;
-  z-index: 10;
-  text-align: left;
-  color: #000000;
+
+/* definições do container preto */
+#containerpreto { 
+position: relative; /* com esta opção o que está dentro será movido relativamente a ele */
+width: 100%;
+max-width: 1466px;
+height: 515px;
+background-color: black;
+margin: 0 auto;
 }
+
+/* Definição da coluna com a carrinha pão de forma */
+
+  /* Edição do container com imagem */
+
+    /* Edição da imagem do container */
+#containerdif {
+  width: 1380px;
+  height: 515px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Left column */
+.col-left {
+  flex: 0 0 40%;
+  max-width: 40%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#paodeforma {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* removes inline whitespace */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* Right column */
+.col-right {
+  flex: 0 0 60%;
+  max-width: 60%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#largecolumn {
+      font-family: "Jura", sans-serif;
+      font-weight: 700;
+font-style: Bold;
+font-size: 30px;
+line-height: 118%;
+letter-spacing: 0%;
+text-align: center;
+width: 500px;
+height: 72px;
+padding-left: 245px;
+padding-top: 0%;
+
+
+}
+
