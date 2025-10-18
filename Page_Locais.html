@@ -55,5 +55,27 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <!-- Java Script -->
+     <script>
+  // Get both select elements
+  const countrySelect = document.getElementById('option1');
+  const citySelect = document.getElementById('option2');
+
+  // Function to check selections and redirect
+  function checkSelections() {
+    const country = countrySelect.value;
+    const city = citySelect.value;
+
+    // When both match the desired combination
+    if (country === 'A' && city === '1') {
+      window.location.href = 'Page_Locais_Porto.html';  // redirect
+    }
+  }
+
+  // Listen for changes on both dropdowns
+  countrySelect.addEventListener('change', checkSelections);
+  citySelect.addEventListener('change', checkSelections);
+</script>
+
 </body>
 </html>
