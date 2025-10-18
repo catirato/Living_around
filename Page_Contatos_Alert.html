@@ -15,7 +15,7 @@
 
 <!-- Adicionar container com foto-->
  <div id="container_contatos" class="image-container">
-    <img id="image_contatos" src="Imagens/pexels-jeremy-bishop-1260133-20146347 2.png" alt="Sample Image" />
+    <img id="image_contatos" src="Imagens/pexels-jeremy-bishop-1260133-20146347 2.png" alt="Sample Image" style="opacity: 19%;" />
     <img id="lines_contatos" src="Imagens/lines-leaning-solid 1.png" alt="Sample Image" />
     <nav id="nav_contatos" class="custom-navbar d-flex justify-content-end">
       <a id="nav_contatos" href="Page_Acomodação.html">ACOMODAÇÃO</a>
@@ -59,17 +59,24 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 <!-- Alerta quando formulário é enviado -->
+<!-- Alerta quando formulário é enviado -->
+<div id="custom-alert" class="alert-box" style="display: none;">
+  <p id="alert-message">Seu formulário foi enviado com sucesso!</p>
+  <button id="alert-ok">OK</button>
+</div>
+
 <script>
-  const form = document.getElementById('contact-form');
+  // Check if the URL has ?alert=success
+  const params = new URLSearchParams(window.location.search);
+  const alertBox = document.getElementById('custom-alert');
+  const alertOk = document.getElementById('alert-ok');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
+  if (params.get('alert') === 'success') {
+    alertBox.style.display = 'block';
+  }
 
-    // Optional: reset the form
-    form.reset();
-
-    // Redirect to the alert page with a flag
-    window.location.href = 'Page_Contatos_Alert.html?alert=success';
+  alertOk.addEventListener('click', function() {
+    alertBox.style.display = 'none';
   });
 </script>
 
