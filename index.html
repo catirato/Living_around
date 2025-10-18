@@ -13,14 +13,14 @@
 </head>
 <body class="bg-light">
 
-<<!-- Adicionar container com foto-->
- <div class="image-container mt-4">
+<!-- Adicionar container com foto-->
+ <div class="image-container">
     <img id="imageIndex" src="Imagens/56d8144cbded6b64756f769dfd17493fdca80df2.jpg" alt="Sample Image" />
-    <nav class="custom-navbar d-flex justify-content-end">
-      <a href="#">Acomodação</a>
-      <a href="#">Locais</a>
+    <nav id="navbar" class="custom-navbar d-flex justify-content-end">
+      <a href="Page_Acomodação.html">Acomodação</a>
+      <a href="Page_Locais.html">Locais</a>
       <a href="#">Blog</a>
-      <a href="#">Contatos</a>
+      <a href="Page_Contatos.html">Contatos</a>
     </nav>
 
 <!-- Adicionar Título -->
@@ -38,8 +38,11 @@
     <div id="textoviva" class="col">
       Viva livre, trabalhe de qualquer lugar, descubra o mundo
     </div>
-    <div id="trabremoto" class="col">
-      Trabalhos Remotos
+    <div class="col-auto d-flex justify-content-center">
+    <div id="line1" class="vertical-line"></div>
+    </div>
+ <div id="trabremoto" class="col position-relative">
+  Trabalhos Remotos
     </div>
     <ul id="indeed1" class="list-unstyled mb-0">
         <li>Indeed</li>
@@ -67,11 +70,59 @@
     <!-- Coluna da direita (mais larga) -->
     <div class="col-right d-flex flex-column justify-content-center">
       <h3 id="largecolumn" class="m-0">Descubra o seu novo escritório</h3>
+      <button id= "botaoIndex" type="button" class="btn btn-outline-light">Descobrir</button>
+      <img id="cornerArrow1" src="Imagens/whiteArrow.png" alt="Corner Image">
+    </div>
+    </div>
+</div>
+
+
+<!-- Adicionar outro container com duas colunas iguais -->
+<div id="containeramarelo2" class="container">
+  <div class="row align-items-center" style="height: 100%;">
+    
+    <!-- Coluna da esquerda com texto e botão -->
+    <div class="col-md-6 text-center text-md-start">
+      <h2 id="largecolumn2" class="mb-4">Temos destinos especiais para você</h2>
+      <button id="botaoIndex2" type="button" class="btn btn-outline-dark">
+        Explorar
+      </button>
+      <img id="cornerArrow2" src="Imagens/BlacArrow.png" alt="Corner Image">
+    </div>
+
+    <!--Coluna da direita com imagem -->
+    <div class="col-md-6 text-center">
+      <img id="estrada" src="Imagens/pexels-thatguycraig000-1546898 2.png" alt="Example Image" class="img-fluid">
     </div>
   </div>
 </div>
 
+<!-- Inserir novo container com imagem do livro, um botão e seta preta-->
+<div id="containerlivro" class="image-container">
+  <img id="livro" src="Imagens/pexels-thepaintedsquare-583848 1.png" alt="Example Image" class="img-fluid">
+  <button id="botaoIndex3" type="button" class="btn btn-outline-dark">
+    Blog
+  </button>
+   <img id="cornerArrow3" src="Imagens/BlacArrow.png" alt="Corner Image">
+</div>
 
+<footer>
+  <div id="containerfooter" class="container-fluid text-center py-4">
+    
+    <!-- Título -->
+    <h2 id="footertext">LIVING AROUND</h2>
+    
+    <!-- Fila de logos -->
+    <div id="footer-images" class="d-flex justify-content-center align-items-center my-3">
+      <img id="facebooklogo" src="Imagens/FacebookVector.png" alt="Image 1" class="footer-img mx-2">
+      <img id="instalogo" src="Imagens/Insta_vector.png" alt="Image 2" class="footer-img mx-2">
+      <img id="xvector" src="Imagens/X_vector.png" alt="Image 3" class="footer-img mx-2">
+    </div>
+    
+    <!-- Footer note -->
+    <p id="power">Power by Cesae Digital</p>
+  </div>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 

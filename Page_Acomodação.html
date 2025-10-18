@@ -4,8 +4,158 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<link href="style_index.css" rel="stylesheet"/> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        
+<!-- Download das fontes necessárias do Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bg-light">
+
+<!-- Adicionar container com foto-->
+ <div id="container_acomodacao" class="image-container">
+    <img id="image_acomodacao" src="Imagens/pexels-lureofadventure-28365967 2_cortada.png" alt="Sample Image" />
+    <img id="lines_acomodacao" src="Imagens/lines-leaning-solid 2.png" alt="Sample Image" />
+    <nav id="nav_acomodacao" class="custom-navbar d-flex justify-content-end">
+      <a id="nav_acomodacao" class="nav-link" href="Page_Acomodação.html">ACOMODAÇÃO</a>
+      <a id="nav_acomodacao"class="nav-link" href="Page_Locais.html">LOCAIS</a>
+      <a id="nav_acomodacao" class="nav-link" href="#">BLOG</a>
+      <a id="nav_acomodacao" class="nav-link" href="Page_Contatos.html">CONTATOS</a>
+    </nav>
+<!-- Adicionar um outro container -->
+ <div id="novooffice" class="hero-text">
+        O SEU NOVO OFFICE
+       </div>
+<div id="containertransp" class="container-fluid"> 
+ </div>
+</div>
+
+
+<!-- Adicionar um container para colocar os cards -->
+<div id="containercards" class="container-fluid py-5">
+  <div class="row g-4 justify-content-center">
+    <!-- Card 1 -->
+       <div class="col-md-6 d-flex justify-content-center">
+          <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2-5.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Hippie Ridee</h5>
+        <p class="card-description">A partir de 50€/dia</p>
+     <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul> 
+    <a href="Modal.html" target="_blank" id="info" style="cursor:pointer; color:blue; text-decoration:underline;">+ info</a>
+
+  </div>
+    </div>
+    <!-- Card 2 -->
+     <div class="col-md-6 d-flex justify-content-center">
+      <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2-4.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Harvest Ride</h5>
+        <p class="card-description">A partir de 80€/dia</p>
+    <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul>  
+        <p id="info">+ info</p>
+    </div>
+    </div>
+        <!-- Card 3 -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2-3.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Nomade Ride</h5>
+        <p class="card-description">A partir de 100€/dia</p>
+      <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul>
+        <p id="info">+ info</p>
+</div>
+    </div>
+        <!-- Card 4 -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2-2.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Family Ride</h5>
+        <p class="card-description">A partir de 50€/dia</p>
+        <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul>
+        <p id="info">+ info</p>
+      </div>
+    </div>
+        <!-- Card 5 -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2-1.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Surf Ride</h5>
+        <p class="card-description">A partir de 60€/dia</p>
+        <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul>
+        <p id="info">+ info</p>
+      </div>
+    </div>
+        <!-- Card 6 -->
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="custom-card">
+        <img src="Imagens/pexels-liam-gant-619294-1426968 2.png" alt="Card Image" class="card-img">
+        <h5 class="card-title mt-3">Cave Rive</h5>
+        <p class="card-description">A partir de 30€/dia</p>
+        <ul class="list-unstyled mb-0">
+      <li>Equipada com:</li>
+      <li id="bullet">Cozinha equipada;</li>
+      <li id="bullet">Cama de casal;</li>
+      <li id="bullet">WC portátil;</li>
+      <li id="bullet">Carregador USB;</li>
+    </ul>
+        <p id="info">+ info</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div id="containerfooter" class="container-fluid text-center py-4">
     
+    <!-- Título -->
+    <h2 id="footertext">LIVING AROUND</h2>
+    
+    <!-- Fila de logos -->
+    <div id="footer-images" class="d-flex justify-content-center align-items-center my-3">
+      <img id="facebooklogo" src="Imagens/FacebookVector.png" alt="Image 1" class="footer-img mx-2">
+      <img id="instalogo" src="Imagens/Insta_vector.png" alt="Image 2" class="footer-img mx-2">
+      <img id="xvector" src="Imagens/X_vector.png" alt="Image 3" class="footer-img mx-2">
+    </div>
+    
+    <!-- Footer note -->
+    <p id="power">Power by Cesae Digital</p>
+    
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
