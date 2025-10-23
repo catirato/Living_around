@@ -102,6 +102,7 @@ letter-spacing: 0%;
 color: #000000;
 padding-left: 918px;
 padding-top: 160px;
+padding-right: 100px;
 }
 
 
@@ -153,6 +154,7 @@ text-align: left;
 list-style: none; /* tirar os bullets */
 z-index: 10; /* ensures it appears above the background */
 margin-bottom: 50%;
+right: 500px;
    }
 
 #indeed2 {
@@ -167,24 +169,55 @@ width: 300px;
 height: 29px;
 padding-left: 1152px;
 padding-top: 250px; 
+margin-right: 1px;
 text-align: left;
 list-style: none; /* tirar os bullets */
 z-index: 10; /* ensures it appears above the background */
+right: 250px;
    }
 
+/* Moldura em volta dos trabalhos remotos */
+#frame-container {
+  position: relative;    /* needed for pseudo-elements */
+  display: inline-block; /* shrink-wrap around content */
+  padding: 20px;
+}
 
+/* Top-left corner */
+#frame-container::before {
+  content: '';
+  position: absolute;
+  top: 250px;
+  left: 800px;
+  width: 50px;           /* horizontal length of corner */
+  height: 50px;          /* vertical length of corner */
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+}
+
+/* Bottom-right corner */
+#frame-container::after {
+  content: '';
+  position: absolute;
+  bottom: 170px;
+  right: 85px;
+  width: 50px;           /* horizontal length of corner */
+  height: 50px;          /* vertical length of corner */
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+}
 
 
 /* Adicionar um container com duas colunas de diferentes larguras */
 
   /* Edição do container */  
-#containerdif {
-  width: 1380px;
+#containerdif {width: 100%;
+  max-width: 1440px;  /* same as your other sections */
   height: 515px;
   display: flex;
   flex-direction: row;
-  padding: 0%;
-  margin: 0%;
+  margin: 0 auto;     /* centers the whole container */
+  padding: 0;
   border: none;
   box-sizing: border-box;
 }
@@ -212,6 +245,7 @@ z-index: 10; /* ensures it appears above the background */
 
 /* Coluna do direita */
 .col-right {
+  position: relative;
   flex: 0 0 60%;
   max-width: 60%;
   height: 100%;
@@ -222,23 +256,26 @@ z-index: 10; /* ensures it appears above the background */
   justify-content: center;
   align-items: flex-start;
   padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 /* Edição da caixa de texto dentro do container preto */
 #largecolumn {
-      font-family: "Jura", sans-serif;
-      font-weight: 700;
+font-family: "Jura", sans-serif;
+font-weight: 700;
 font-style: Bold;
 font-size: 30px;
 line-height: 118%;
 letter-spacing: 0%;
 text-align: center;
-width: 500px;
+width: 600px;
 height: 72px;
-padding-left: 245px;
+padding-left: 20px;
 padding-top: 0%;
+padding: 0;          /* remove manual offsets */
+margin: 0 auto;      /* optional: center horizontally if desired */
+margin-left: 120px !important;
+
 }
 
 /* Edição do botão dentro do container preto */
@@ -253,7 +290,7 @@ padding-top: 0%;
   font-size: 25px;
   /* Mover a sua positção */
   margin-top: 100px;   /* para baixo */
-  margin-left: 210px;  /* para a direita */
+  margin-left: 250px;  /* para a direita */
 }
 
 /* Edição da seta */
@@ -265,6 +302,9 @@ padding-top: 0%;
   height: 58px; 
   margin-top: 20%;
   margin-left: 93%;
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
 }
 
 /* Edição do 4º container desta página com texto e foto */
@@ -290,7 +330,8 @@ text-align: center;
 width: 400px;
 height: 72px;
 margin-left: 30%;
-margin-top: 10%;
+margin-top: 20%;
+position: relative;
 }
 
 #botaoIndex2 {
@@ -310,8 +351,9 @@ margin-top: 10%;
 #cornerArrow2 {
   width: 58px; 
   height: 58px; 
-  margin-top: 30%;
+  margin-top: 20%;
   margin-right: 90%;
+  position: relative;
 }
 
 /* Edição da imagem com a estrada */
@@ -397,7 +439,7 @@ box-sizing: border-box;
   line-height: 118%;
   text-align: center;
   color: white;
-  width: 234px;
+  width: 250px;
   height: 36px;
   z-index: 10;
   margin-top: 0;
@@ -493,6 +535,7 @@ top: 20px;
 left: 20px;
 max-width: 58.99px;
 max-height: 61.26px;
+z-index: 1;
 }
 
 /* Definição do formulário */
