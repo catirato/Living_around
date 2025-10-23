@@ -69,7 +69,7 @@ position: absolute;
       transform: translate(-50%, -50%);
       font-size: 2rem;
       font-weight: bold;
-      background: transparent; /* optional dark overlay for readability */
+      background: transparent; 
       padding: 0.5rem 1rem;
       color: white;
       font-family:"Josefin Slab", serif;
@@ -117,21 +117,21 @@ font-size: 43px;
 letter-spacing: 20%;
 color: #000000;
 text-align: left;
-  align-items: center;     /* vertical centering */
-  height: 100%;            /* make it fill the column’s height */
-  text-align: left;      /* center multi-line text */
+  align-items: center;     /* centralização vertical */
+  height: 100%;            /* faz com que preencha a altura da coluna */
+  text-align: left;      /* centralizar texto multilinha */
 max-width: 590px;
 padding-left: 2%;
  }
 
 #line1 {
-  position: absolute;    /* overlay inside the row */
+  position: absolute;    /* sobreposição dentro da linha */
   top: 0;
   bottom: 0;
   width: 1px;
   background-color: black;
-  left: 50%;             /* adjust horizontal position between the columns */
-  transform: translateX(-50%);              /* fully visible */
+  left: 50%;             /* ajustar a posição horizontal entre as colunas */
+  transform: translateX(-50%);              /* totalmente visível */
   height: 400px;
   margin-top: 5%;
 }
@@ -152,7 +152,7 @@ padding-left: 834px;
 padding-top: 250px; 
 text-align: left;
 list-style: none; /* tirar os bullets */
-z-index: 10; /* ensures it appears above the background */
+z-index: 10; /* garante que aparece acima do fundo */
 margin-bottom: 50%;
 right: 500px;
    }
@@ -172,37 +172,37 @@ padding-top: 250px;
 margin-right: 1px;
 text-align: left;
 list-style: none; /* tirar os bullets */
-z-index: 10; /* ensures it appears above the background */
+z-index: 10; /* garante que aparece acima do fundo */
 right: 250px;
    }
 
 /* Moldura em volta dos trabalhos remotos */
 #frame-container {
-  position: relative;    /* needed for pseudo-elements */
-  display: inline-block; /* shrink-wrap around content */
+  position: relative;    
+  display: inline-block; /* encapsulamento em torno do conteúdo */
   padding: 20px;
 }
 
-/* Top-left corner */
+/* Canto superior esquerdo */
 #frame-container::before {
   content: '';
   position: absolute;
   top: 250px;
   left: 800px;
-  width: 50px;           /* horizontal length of corner */
-  height: 50px;          /* vertical length of corner */
+  width: 50px;           /* comprimento horizontal do canto */
+  height: 50px;          /* comprimento vertical do canto */
   border-top: 10px solid black;
   border-left: 10px solid black;
 }
 
-/* Bottom-right corner */
+/* Canto inferior direito */
 #frame-container::after {
   content: '';
   position: absolute;
   bottom: 170px;
   right: 85px;
-  width: 50px;           /* horizontal length of corner */
-  height: 50px;          /* vertical length of corner */
+  width: 50px;           /* comprimento horizontal do canto */
+  height: 50px;          /* comprimento vertical do canto */
   border-bottom: 10px solid black;
   border-right: 10px solid black;
 }
@@ -212,11 +212,11 @@ right: 250px;
 
   /* Edição do container */  
 #containerdif {width: 100%;
-  max-width: 1440px;  /* same as your other sections */
+  max-width: 1440px; 
   height: 515px;
   display: flex;
   flex-direction: row;
-  margin: 0 auto;     /* centers the whole container */
+  margin: 0 auto;     /* centraliza todo o container */
   padding: 0;
   border: none;
   box-sizing: border-box;
@@ -237,7 +237,7 @@ right: 250px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* removes inline whitespace */
+  display: block; /* remove espaços em branco embutidos */
   padding: 0;
   margin: 0;
   border: none;
@@ -272,8 +272,8 @@ width: 600px;
 height: 72px;
 padding-left: 20px;
 padding-top: 0%;
-padding: 0;          /* remove manual offsets */
-margin: 0 auto;      /* optional: center horizontally if desired */
+padding: 0;          /* remover deslocações manuais */
+margin: 0 auto;      
 margin-left: 120px !important;
 
 }
@@ -491,7 +491,7 @@ font-size: 25px;
 text-align: center;
 width: 465px;
 height: 60px;
-background: transparent; /* optional dark overlay for readability */
+background: transparent; 
 top: 200px;
 left: 800px;
 color: white;
@@ -563,12 +563,12 @@ z-index: 1;
   padding: 40px;
   box-sizing: border-box;
   z-index: 2;
-  margin-top: 34% !important;   /* remove any extra top margin */
-  padding-top: 0 !important;  /* remove any extra padding at the top */
+  margin-top: 34% !important;   /* remove qualquer margem superior extra */
+  padding-top: 0 !important;  /* remove qualquer enchimento extra na parte superior */
 }
 
 #contact-form .mb-3 {
-  margin-bottom: 0.5rem;      /* tighten spacing between fields */
+  margin-bottom: 0.5rem;      /* diminui o espaçamento entre campos */
 }
 
 /* Editar o botão do formulario */
@@ -588,13 +588,13 @@ border-radius: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;           /* you can adjust as needed */
+  width: 400px;           
   background-color: white;
   color: black;
   padding: 30px 20px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  display: none;           /* hidden by default */
+  display: none;           /* escondido por default */
   z-index: 9999;
   text-align: center;
   font-family: 'Jura', sans-serif;
@@ -627,17 +627,17 @@ border-radius: 40px;
 
 #container_acomodacao {
   position: relative;
-  width: 1470px;           /* fixed page width */
+  width: 1470px;           /* largura de página fixa */
   text-align: center;
-  margin: 0 auto;         /* centers the container */
-  overflow: hidden;       /* keeps things tidy inside */
+  margin: 0 auto;         /* centraliza o container */
+  overflow: hidden;       /* mantém as coisas arrumadas por dentro */
 }
 
 #image_acomodacao {
-  width: 100%;            /* fills the 860px container */
-  height: auto;           /* keeps proportions */
+  width: 100%;            
+  height: auto;           /* mantém proporções */
   display: block;
-  position: relative;     /* changed from absolute */
+  position: relative;     
 }
 
  /* Texto da NavBar */
@@ -665,11 +665,11 @@ border-radius: 40px;
 
 #containertransp {
   position: absolute;
-  width: 100%;            /* match hero width automatically */
+  width: 100%;            
   height: 146px;
   background-color: #0B1111CC;
   opacity: 80%;
-  bottom: 27%;            /* adjust placement relative to image */
+  bottom: 27%;            
   left: 0;
 }
 
@@ -691,7 +691,7 @@ border-radius: 40px;
 #containercards {
   background-color: rgba(180, 155, 44, 0.25); /* #B49B2C40 with 25% opacity */
   padding: 80px 0;
-  width: 1470px; /* same as hero container */
+  width: 1470px; 
   margin: 0 auto;
 }
 
@@ -786,7 +786,7 @@ margin-top: 6%;
   padding: 40px;
 }
 
-/* Form box */
+/* Caixa do formulário */
 #custom-form {
   width: 466px;
   height: 642px;
@@ -802,7 +802,7 @@ margin-top: 6%;
 }
 
 
-/* Form groups */
+/* Grupos do formulário */
 .form-group {
   margin-bottom: 40px;
   text-align: left;
@@ -826,17 +826,17 @@ select {
   outline: none;
     font-family: 'Jura', sans-serif;
       font-size: 25px;
-  width: 100%;       /* fills parent container */
+  width: 100%;       /* preenche o contentor pai */
   -webkit-appearance: none; /* Chrome/Safari */
   -moz-appearance: none;    /* Firefox */
-  appearance: none;         /* modern browsers */
+  appearance: none;         
   background: #fff url('data:image/svg+xml;utf8,<svg fill="%23000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 10px center;
   background-size: 40px 40px;
-  padding-right: 40px; /* make room for arrow */
+  padding-right: 40px; 
 }
 
 #option1 {
-  width: 345px;          /* width of the visible box */
+  width: 345px;         
   height: 76px;
   padding: 10px;
   border-radius: 10px;
@@ -847,7 +847,7 @@ select {
 
 
 #option2 {
-  width: 345px;          /* width of the visible box */
+  width: 345px;          
   height: 76px;
   padding: 10px;
   border-radius: 10px;
@@ -857,7 +857,7 @@ select {
 }
 
 
-/* Button */
+/* Botão */
 #form-button {
   background: #686931;
   color: black;
@@ -945,17 +945,17 @@ height: 55px;
 
 #modal {
     position: relative;
-  max-width: 1440px;           /* fixed page width */
+  max-width: 1440px;           
   text-align: center;
-  margin: 0 auto;         /* centers the container */
-  overflow: hidden;       /* keeps things tidy inside */
+  margin: 0 auto;        
+  overflow: hidden;       
 }
 
 #imagemodal {
-  width: 100%;            /* fills the container */
-  height: auto;           /* keeps proportions */
+  width: 100%;           
+  height: auto;         
   display: block;
-  position: relative;     /* changed from absolute */
+  position: relative;    
 }
 
 #cardmodal {
@@ -975,7 +975,7 @@ height: 55px;
     text-align: center;
 }
 
-/* Figure inside the card */
+/* Figura dentro do card */
 #cardmodal figure {
     width: 680px;
     height: 367px;
@@ -991,7 +991,7 @@ height: 55px;
     object-fit: cover;
 }
 
-/* Card text */
+/* Texto do card */
 #cardmodal .card-title {
     font-size: 30px;
     margin-bottom: 10px;
@@ -1020,7 +1020,7 @@ height: 55px;
     margin-bottom: 5px;
 }
 
-/* Button */
+/* Botão */
 #cardmodal .card-button {
     width: 345px;
     height: 76px;
