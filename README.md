@@ -6,3 +6,9 @@ Não sei se foi porque iniciei o trabalho com a página Index.html, mas achei qu
 Ao início pensei em fazer uma página .css para cada HTML, mas cheguei à conclusão que como existiam alguns elementos em comum, como a navbar e o footer, o melhor seria mesmo ter tudo num único ficheiro. De qualquer forma, a estilização de cada página está perfeitamente identificada com títulos para cada uma delas.
 
 Infelizmente, não consegui fazer com que o site ficasse totalmente responsivo e em modo "mobile first".
+
+Link para o website:
+https://catirato.github.io/Living_around/
+
+Link do repositório no GitHub:
+https://github.com/catirato/Living_around.git
