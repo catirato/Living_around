@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Living Around - Descubra o Mundo</title>
 <link href="style_index.css" rel="stylesheet"/> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         
 <!-- Download das fontes necessárias do Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -13,10 +13,10 @@
 </head>
 <body class="bg-light">
 
-<!-- Adicionar container com foto-->
- <div class="image-container">
-    <img id="imageIndex" src="Imagens/56d8144cbded6b64756f769dfd17493fdca80df2.jpg" alt="Sample Image" />
-    <nav id="navbar" class="custom-navbar d-flex justify-content-end">
+<!-- Adicionar container com foto (HEADER/HERO SECTION) -->
+ <header id="top" class="image-container fixed-width-container">
+    <img id="imageIndex" src="Imagens/56d8144cbded6b64756f769dfd17493fdca80df2.jpg" alt="Van estacionada em um deserto com montanhas ao fundo" />
+    <nav id="navbar" class="custom-navbar">
       <a href="Page_Acomodação.html">Acomodação</a>
       <a href="Page_Locais.html">Locais</a>
       <a href="#">Blog</a>
@@ -27,10 +27,11 @@
     <div id="textoliving" class="hero-text">
       LIVING AROUND
     </div>
-  </div>
+  </header>
 
-  <!-- Adicionar container amarelo em baixo -->
-<div id="containeramarelo" class="container">
+<main>
+  <!-- Adicionar container amarelo em baixo (SECTION 1: MOTTO & JOBS) -->
+<section id="containeramarelo" class="fixed-width-container">
 
 
 <!-- Dentro deste container inserir duas colunas com texto -->
@@ -45,86 +46,92 @@
     
  <div id="frame-container" class="col position-relative">
     <div id="trabremoto">Trabalhos Remotos</div>
+    <!-- Combined into one list and converted to proper links (placeholder URLs) -->
     <ul id="indeed1" class="list-unstyled mb-0">
-      <li>Indeed</li>
-      <li>Linkedin</li>
-      <li>JobRemote</li>
-      <li>GoogleJobs</li>
+      <li><a style="text-decoration: none; color: black;">Indeed</a></li>
+      <li><a style="text-decoration: none; color: black;">Linkedin</a></li>
+      <li><a style="text-decoration: none; color: black;">JobRemote</a></li>
+      <li><a style="text-decoration: none; color: black;">GoogleJobs</a></li>
     </ul>
     <ul id="indeed2" class="list-unstyled mb-0">
-      <li>Indeed</li>
-      <li>Linkedin</li>
-      <li>JobRemote</li>
-      <li>GoogleJobs</li>
+      <li><a style="text-decoration: none; color: black;">Indeed</a></li>
+      <li><a style="text-decoration: none; color: black;">Linkedin</a></li>
+      <li><a style="text-decoration: none; color: black;">JobRemote</a></li>
+      <li><a style="text-decoration: none; color: black;">GoogleJobs</a></li>
     </ul>
   </div>
 </div>
-</div>
+</section>
 
-<!-- Adicionar container com duas colunas de diferentes tamanhos -->
-<div id="containerdif" class="custom-container">
-  <div class="row no-gutters h-100 m-0">
+<!-- Adicionar container com duas colunas de diferentes tamanhos (SECTION 2: OFFICE) -->
+<section id="containerdif">
+  <div id="containerdescobrir" class=" container-fluid row m-0">
     <!-- Coluna da esquerda (mais pequeno) -->
-    <div class="col-left d-flex align-items-center justify-content-center">
-      <img id="paodeforma" src="Imagens/pexels-gya-den-768256-2303781 2.png" alt="Example Image" class="img-fluid">
+    <div id="colleft" class="col-left d-flex">
+      <img id="paodeforma" src="Imagens/70f6b786bb5d600e9c82037af1a02e4dc2f4f5c4.jpg" alt="Pessoa trabalhando em um laptop dentro de uma carrinha adaptada" class="img-fluid">
     </div>
 
     <!-- Coluna da direita (mais larga) -->
     <div class="col-right d-flex flex-column justify-content-center">
       <h3 id="largecolumn" class="m-0">Descubra o seu novo escritório</h3>
-      <button id= "botaoIndex" type="button" class="btn btn-outline-light">Descobrir</button>
-      <a href="#navbar">
-      <img id="cornerArrow1" src="Imagens/whiteArrow.png" alt="Corner Image">
-    </a>
+      <a href="Page_Acomodação.html">
+        <button id= "botaoIndex" type="button" class="btn btn-outline-light">Descobrir</button>
+      </a>
+      <a href="#top">
+        <img id="cornerArrow1" src="Imagens/whiteArrow.png" alt="Seta apontando para cima para voltar ao topo">
+      </a>
     </div>
     </div>
-</div>
+</section>
 
 
-<!-- Adicionar outro container com duas colunas iguais -->
-<div id="containeramarelo2" class="container">
+<!-- Adicionar outro container com duas colunas iguais (SECTION 3: DESTINATIONS) -->
+<section id="containeramarelo2" class="fixed-width-container">
   <div class="row align-items-center" style="height: 100%;">
     
     <!-- Coluna da esquerda com texto e botão -->
     <div class="col-md-6 text-center text-md-start">
       <h2 id="largecolumn2" class="mb-4">Temos destinos especiais para você</h2>
-      <button id="botaoIndex2" type="button" class="btn btn-outline-dark">
-        Explorar
-      </button>
-      <a href="#navbar">
-      <img id="cornerArrow2" src="Imagens/BlacArrow.png" alt="Corner Image">
-    </a>
+      <a href="Page_Locais.html">
+        <button id="botaoIndex2" type="button" class="btn btn-outline-dark">
+          Explorar
+        </button>
+      </a>
+      <a href="#top">
+        <img id="cornerArrow2" src="Imagens/BlacArrow.png" alt="Seta apontando para cima para voltar ao topo">
+      </a>
     </div>
 
     <!--Coluna da direita com imagem -->
     <div class="col-md-6 text-center">
-      <img id="estrada" src="Imagens/pexels-thatguycraig000-1546898 2.png" alt="Example Image" class="img-fluid">
+      <img id="estrada" src="Imagens/pexels-thatguycraig000-1546898 2.png" alt="Estrada com curvas na montanha ao pôr do sol" class="img-fluid">
     </div>
   </div>
-</div>
+</section>
 
-<!-- Inserir novo container com imagem do livro, um botão e seta preta-->
-<div id="containerlivro" class="image-container">
-  <img id="livro" src="Imagens/pexels-thepaintedsquare-583848 1.png" alt="Example Image" class="img-fluid">
+<!-- Inserir novo container com imagem do livro, um botão e seta preta (SECTION 4: BLOG)-->
+<section id="containerlivro" class="image-container fixed-width-container">
+  <img id="livro" src="Imagens/pexels-thepaintedsquare-583848 1.png" alt="Livro aberto sobre uma superfície de madeira" class="img-fluid">
   <button id="botaoIndex3" type="button" class="btn btn-outline-dark">
     Blog
   </button>
-  <a href="#navbar">
-   <img id="cornerArrow3" src="Imagens/BlacArrow.png" alt="Corner Image">
+  <a href="#top">
+   <img id="cornerArrow3" src="Imagens/BlacArrow.png" alt="Seta apontando para cima para voltar ao topo">
    </a>
-</div>
+</section>
+</main>
 
 <footer>
-  <div id="containerfooter" class="container-fluid text-center py-4">
+  <div id="containerfooter" class="fixed-width-container text-center py-4">
     
     <!-- Título -->
     <h2 id="footertext">LIVING AROUND</h2>
     
     <!-- Fila de logos -->
     <div id="footer-images" class="d-flex justify-content-center align-items-center my-3">
-      <img id="facebooklogo" src="Imagens/FacebookVector.png" alt="Image 1" class="footer-img mx-2">
-      <img id="instalogo" src="Imagens/Insta_vector.png" alt="Image 2" class="footer-img mx-2">
-      <img id="xvector" src="Imagens/X_vector.png" alt="Image 3" class="footer-img mx-2">
+      <img id="facebooklogo" src="Imagens/FacebookVector.png" alt="Logotipo do Facebook" class="footer-img mx-2">
+      <img id="instalogo" src="Imagens/Insta_vector.png" alt="Logotipo do Instagram" class="footer-img mx-2">
+      <img id="xvector" src="Imagens/X_vector.png" alt="Logotipo do X (antigo Twitter)" class="footer-img mx-2">
     </div>
     
     <!-- Footer note -->
@@ -132,7 +139,7 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
 </html>
