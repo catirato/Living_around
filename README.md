@@ -1,14 +1,9 @@
-Este Website foi construido como o **1º trabalho** do módulo de **"Programação Web" do CESAE 2025**, lecionado pela professora **Laís Reis**. O site foi construido unicamente em **HTML** usando as marcações do **CSS**, **Bootstrap** e alguns códigos em **Java** em que usei a IA para me ajudar.
+# Living Around
 
-Ao início tive alguma dificuladae em perceber o conceito de "div" e para que servia realmente, mas agora que finalizei o trabalho, já me faz todo o sentido. 
+Este Website foi construido como o **1º trabalho** do módulo de **"Programação Web" do CESAE 2025**, lecionado pela professora **Laís Reis**.
 
-Não sei se foi porque iniciei o trabalho com a página Index.html, mas achei que esta foi a mais dificil de construir; tem vários containers, uns com colunas outros sem. Algumas colunas com imagem e outras com texto. As setas e os botões. É uma página com diversos pormenores em que se demora bastante tempo.
-Ao início pensei em fazer uma página .css para cada HTML, mas cheguei à conclusão que como existiam alguns elementos em comum, como a navbar e o footer, o melhor seria mesmo ter tudo num único ficheiro. De qualquer forma, a estilização de cada página está perfeitamente identificada com títulos para cada uma delas.
+**Living Around** é uma aplicação web focada em trabalho remoto, viagem e liberdade de movimento. O projeto apresenta uma experiência visual inspirada no estilo van life, permitindo ao utilizador explorar destinos, descobrir opções de acomodação e entrar em contacto com a marca através de uma navegação simples e responsiva.
 
-Infelizmente, não consegui fazer com que o site ficasse totalmente responsivo e em modo "mobile first".
+A aplicação foi desenvolvida com HTML, CSS, Bootstrap e JavaScript, com atenção ao design visual, adaptação a diferentes tamanhos de ecrã e organização clara das várias páginas. O objetivo é comunicar uma proposta de lifestyle digital nómada, combinando inspiração, exploração e funcionalidade numa interface leve e intuitiva.
 
-Link para o website:
-https://catirato.github.io/Living_around/
-
-Link do repositório no GitHub:
-https://github.com/catirato/Living_around.git
+**Site da aplicação:** https://catirato.github.io/Living_around/
