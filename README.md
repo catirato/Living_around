@@ -18,8 +18,6 @@ https://catirato.github.io/Living_around/
 
 ![Living Around Preview](Imagens/preview.png)
 
-*(Sugestão: cria um screenshot do site e guarda como `preview.png` dentro da pasta `Imagens`)*
-
 ---
 
 # 📖 Sobre o projeto
