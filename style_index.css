@@ -26,6 +26,11 @@ body.bg-light {
     background-color: #f8f9fa;
 }
 
+footer {
+    width: 100%;
+    background-color: #000;
+}
+
 #top {
     width: var(--page-width);
 }
@@ -34,12 +39,18 @@ body.bg-light {
 /* ----------- Global Fixed Width Container (1440px) ---------------- */
 /* ------------------------------------------------------------------ */
 .fixed-width-container {
-    width: var(--page-width) !important;
-    min-width: var(--page-width);
+    width: min(100%, var(--page-width)) !important;
+    min-width: 0;
     max-width: var(--page-width);
     margin: 0 auto !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+}
+
+.page-scale .fixed-width-container {
+    width: var(--page-width) !important;
+    min-width: var(--page-width);
+    max-width: var(--page-width);
 }
 
 /*/*/*/*/*/*/*/*/*/*/*/*/*/* Página Index  /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/
@@ -106,6 +117,110 @@ body.bg-light {
 
 .custom-navbar a:hover {
     text-decoration: underline;
+}
+
+.desktop-navbar {
+    display: flex;
+}
+
+.nav-dark a {
+    color: #000;
+}
+
+.nav-light a {
+    color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 40;
+}
+
+.mobile-menu summary {
+    list-style: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    background: rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(8px);
+}
+
+.mobile-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.mobile-menu summary span {
+    width: 18px;
+    height: 2px;
+    border-radius: 999px;
+    background: #fff;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.mobile-menu.nav-dark summary {
+    background: rgba(255, 255, 255, 0.72);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.mobile-menu.nav-dark summary span {
+    background: #000;
+}
+
+.mobile-menu[open] summary span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-menu[open] summary span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu[open] summary span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu-panel {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 220px;
+    padding: 14px;
+    border-radius: 18px;
+    background: rgba(10, 10, 10, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+}
+
+.mobile-menu.nav-dark .mobile-menu-panel {
+    background: rgba(255, 250, 238, 0.96);
+}
+
+.mobile-menu-panel a {
+    font-family: "Jura", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+}
+
+.mobile-menu.nav-light .mobile-menu-panel a {
+    color: #fff;
+}
+
+.mobile-menu.nav-dark .mobile-menu-panel a {
+    color: #000;
 }
 
 #textoliving {
@@ -427,12 +542,231 @@ body.bg-light {
     }
 }
 
+@media (max-width: 1024px) {
+    .desktop-navbar {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .page-scale {
+        width: 100%;
+        transform: none !important;
+        height: auto !important;
+    }
+
+    .page-scale .fixed-width-container {
+        width: 100% !important;
+        min-width: 0;
+        max-width: none;
+    }
+
+    #top,
+    .home-main,
+    .home-section {
+        width: 100% !important;
+        min-width: 0;
+        max-width: none;
+    }
+
+    .home-hero {
+        height: 520px;
+    }
+
+    #imageIndex {
+        height: 520px;
+    }
+
+    #textoliving {
+        bottom: 150px;
+        font-size: 56px;
+        text-align: center;
+        width: min(88vw, 520px);
+        white-space: normal;
+    }
+
+    #containeramarelo {
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding: 40px 20px;
+    }
+
+    #textoviva {
+        max-width: none;
+        margin-left: 0;
+        font-size: 24px;
+        letter-spacing: 0.14em;
+        text-align: center;
+        justify-content: center;
+        padding: 0 12px;
+    }
+
+    #line1 {
+        width: 100%;
+        height: 1px;
+    }
+
+    #frame-container {
+        width: min(100%, 460px);
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    #trabremoto {
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #indeed1,
+    #indeed2 {
+        top: 82px;
+        font-size: 18px;
+    }
+
+    #indeed1 {
+        left: 48px;
+    }
+
+    #indeed2 {
+        left: auto;
+        right: 48px;
+    }
+
+    #containerdif {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .col-left,
+    .col-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .col-left {
+        height: 340px;
+    }
+
+    .col-right {
+        min-height: 320px;
+        padding: 40px 20px 72px;
+    }
+
+    #containeramarelo2 {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .destinations-copy,
+    .destinations-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .destinations-copy {
+        padding: 42px 20px 72px;
+    }
+
+    #largecolumn2 {
+        width: min(100%, 420px);
+        font-size: 32px;
+    }
+
+    #estrada {
+        height: 340px;
+    }
+
+    #containerlivro {
+        height: 500px;
+    }
+
+    #botaoIndex3 {
+        top: 50%;
+    }
+
+    #cornerArrow1,
+    #cornerArrow2,
+    #cornerArrow3 {
+        width: 36px;
+        height: 36px;
+    }
+
+    #containerfooter {
+        width: 100% !important;
+        min-width: 0;
+        height: auto;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #textoliving {
+        bottom: 138px;
+        font-size: 42px;
+        width: min(90vw, 320px);
+    }
+
+    #textoviva {
+        font-size: 20px;
+    }
+
+    #frame-container {
+        width: min(100%, 360px);
+        height: 230px;
+    }
+
+    #trabremoto {
+        font-size: 22px;
+    }
+
+    #indeed1,
+    #indeed2 {
+        font-size: 15px;
+    }
+
+    #indeed1 {
+        left: 28px;
+    }
+
+    #indeed2 {
+        right: 28px;
+    }
+
+    .col-left {
+        height: 280px;
+    }
+
+    .col-right {
+        min-height: 260px;
+    }
+
+    #largecolumn2 {
+        width: min(100%, 320px);
+        font-size: 26px;
+    }
+
+    #estrada {
+        height: 280px;
+    }
+
+    #containerlivro {
+        height: 420px;
+    }
+}
+
 /*/*/*/*/*/*/*/*/*/*/*/*/*/* Página Contatos  /*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/**/
 
 #container_contatos {
     position: relative;
     text-align: center;
-    /* Width is now controlled by .fixed-width-container in HTML */
+    width: min(100%, var(--page-width));
     margin: 0 auto;
 }
 
@@ -571,7 +905,7 @@ body.bg-light {
 
 #container_acomodacao {
     position: relative;
-    /* Width is now controlled by .fixed-width-container in HTML */
+    width: min(100%, var(--page-width));
     text-align: center;
     margin: 0 auto;
 }
@@ -700,12 +1034,119 @@ body.bg-light {
     margin-top: 6%;
 }
 
+@media (max-width: 1024px) {
+    #lines_acomodacao {
+        width: 46px;
+        height: auto;
+        top: 16px;
+        left: 16px;
+    }
+
+    #nav_acomodacao {
+        font-size: 18px;
+        margin: 0 0.45rem;
+    }
+
+    #containertransp {
+        height: 112px;
+        bottom: 18%;
+    }
+
+    #novooffice {
+        bottom: 18%;
+        font-size: 52px;
+        padding: 0 24px;
+    }
+
+    #containercards {
+        padding: 48px 20px;
+    }
+
+    .custom-card {
+        width: 100%;
+        max-width: 574px;
+        height: auto;
+        padding: 20px 20px 28px;
+    }
+
+    .card-img {
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    #image_acomodacao {
+        min-height: 520px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #lines_acomodacao {
+        width: 38px;
+        top: 14px;
+        left: 14px;
+    }
+
+    #nav_acomodacao.custom-navbar {
+        left: 70px;
+        right: 14px;
+        top: 14px;
+        justify-content: flex-end;
+        gap: 8px 12px;
+    }
+
+    #nav_acomodacao {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    #containertransp {
+        height: 88px;
+        bottom: 14%;
+    }
+
+    #novooffice {
+        font-size: 32px;
+        bottom: 14%;
+        padding: 0 18px;
+    }
+
+    #containercards {
+        padding: 32px 14px;
+    }
+
+    .custom-card {
+        border-radius: 24px;
+        padding: 14px 14px 22px;
+    }
+
+    .card-img {
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .card-description,
+    .list-unstyled,
+    #info {
+        font-size: 17px;
+    }
+
+    #containerfooter {
+        padding: 36px 20px;
+    }
+}
+
 /* /* /* /* /* /* /* /* Página Locais /* /* /* /* /* /* /* /* */
 
 #container_locais {
     position: relative;
     text-align: center;
-    /* Width is now controlled by .fixed-width-container in HTML */
+    width: min(100%, var(--page-width));
     margin: 0 auto;
 }
 
@@ -861,7 +1302,7 @@ select {
 
 #modal {
     position: relative;
-    /* Width is now controlled by .fixed-width-container in HTML */
+    width: min(100%, var(--page-width));
     text-align: center;
     margin: 0 auto;
 }
@@ -951,4 +1392,345 @@ select {
 
 #cardmodal .card-button:hover {
     opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+    #image_contatos,
+    #image_locais {
+        height: 860px;
+    }
+
+    #lines_contatos {
+        width: 46px;
+        height: auto;
+        top: 16px;
+        left: 16px;
+    }
+
+    #nav_contatos.custom-navbar {
+        top: 18px;
+        right: 20px;
+        left: auto;
+    }
+
+    #nav_contatos {
+        font-size: 18px;
+        margin: 0 0.45rem;
+    }
+
+    #huxleyfrase {
+        top: 120px;
+        right: 48px;
+        width: 360px;
+        font-size: 22px;
+        line-height: 1.35;
+    }
+
+    #huxley {
+        top: 230px;
+        right: 48px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    #contact-form-container {
+        left: 32%;
+    }
+
+    #contact-form {
+        width: 360px;
+        padding: 30px;
+    }
+
+    .alert-box {
+        width: min(88vw, 400px);
+    }
+
+    #form-container {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    #custom-form {
+        width: min(100%, 420px);
+        padding: 32px;
+    }
+
+    label {
+        font-size: 22px;
+    }
+
+    select,
+    #option1,
+    #option2,
+    #form-button {
+        font-size: 20px;
+    }
+
+    #googlemap {
+        width: 400px;
+        height: 300px;
+        right: 48px;
+        bottom: 25%;
+    }
+
+    #containermapa {
+        width: 400px;
+        right: 48px;
+        bottom: 5%;
+    }
+
+    #textomapa,
+    #textomorada,
+    #textomorada2 {
+        right: 48px;
+    }
+
+    #textomapa {
+        bottom: 17.5%;
+        font-size: 23px;
+        width: 400px;
+        text-align: center;
+    }
+
+    #textomorada {
+        bottom: 10.5%;
+        width: 240px;
+        font-size: 18px;
+    }
+
+    #textomorada2 {
+        bottom: 6%;
+        width: 240px;
+        font-size: 18px;
+    }
+
+    #cardmodal {
+        width: min(92vw, 763px);
+        padding: 28px;
+    }
+
+    #cardmodal figure {
+        height: 300px;
+    }
+
+    #cardmodal .card-button {
+        width: min(100%, 345px);
+    }
+}
+
+@media (max-width: 768px) {
+    #image_contatos,
+    #image_locais {
+        min-height: 760px;
+        height: auto;
+        object-position: center;
+    }
+
+    #lines_contatos {
+        width: 38px;
+        top: 14px;
+        left: 14px;
+    }
+
+    #nav_contatos.custom-navbar {
+        left: 70px;
+        right: 14px;
+        top: 14px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+    }
+
+    #nav_contatos {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    #huxleyfrase {
+        top: 88px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: min(88vw, 340px);
+        font-size: 18px;
+        line-height: 1.45;
+    }
+
+    #huxley {
+        top: 188px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: auto;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #contact-form-container {
+        position: absolute;
+        top: 56%;
+        left: 50%;
+        width: 100%;
+        padding: 0 14px;
+        transform: translate(-50%, -50%);
+    }
+
+    #contact-form {
+        width: min(100%, 360px);
+        padding: 22px 18px;
+        border-radius: 24px;
+    }
+
+    #contact-form label,
+    #contact-form .form-label {
+        font-size: 16px;
+    }
+
+    #botaoform {
+        height: 58px;
+        border-radius: 28px;
+    }
+
+    .alert-box {
+        padding: 24px 16px;
+        font-size: 17px;
+        border-radius: 16px;
+    }
+
+    #alert-ok {
+        width: min(100%, 240px);
+        height: 52px;
+        font-size: 18px;
+    }
+
+    #form-container {
+        top: 54%;
+        width: 100%;
+        padding: 0 14px;
+    }
+
+    #custom-form {
+        width: min(100%, 360px);
+        padding: 22px 18px;
+        border-radius: 22px;
+    }
+
+    .form-group {
+        margin-bottom: 22px;
+    }
+
+    label {
+        font-size: 17px;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    select {
+        font-size: 18px;
+        background-size: 28px 28px;
+    }
+
+    #option1,
+    #option2,
+    #form-button {
+        height: 58px;
+        font-size: 18px;
+    }
+
+    #form-button {
+        margin-top: 8px;
+    }
+
+    #image_locais {
+        min-height: 980px;
+    }
+
+    #googlemap {
+        left: 50%;
+        right: auto;
+        bottom: 27%;
+        transform: translateX(-50%);
+        width: min(92vw, 340px);
+        height: 240px;
+        border-radius: 24px;
+    }
+
+    #containermapa {
+        left: 50%;
+        right: auto;
+        bottom: 6%;
+        transform: translateX(-50%);
+        width: min(92vw, 340px);
+        height: 170px;
+        border-radius: 24px;
+    }
+
+    #textomapa,
+    #textomorada,
+    #textomorada2 {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    #textomapa {
+        bottom: 18.5%;
+        width: min(92vw, 320px);
+        font-size: 18px;
+    }
+
+    #textomorada {
+        bottom: 11.5%;
+        width: min(92vw, 280px);
+        font-size: 15px;
+    }
+
+    #textomorada2 {
+        bottom: 7.5%;
+        width: min(92vw, 280px);
+        font-size: 15px;
+    }
+
+    #modal {
+        min-height: 100vh;
+    }
+
+    #cardmodal {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: min(94vw, 420px);
+        margin: 24px auto;
+        padding: 18px 16px 24px;
+        border-radius: 24px;
+    }
+
+    #cardmodal figure {
+        height: 190px;
+        border-radius: 20px;
+        margin-bottom: 16px;
+    }
+
+    #cardmodal .card-title {
+        font-size: 24px;
+    }
+
+    #cardmodal .card-description {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-left: 0;
+    }
+
+    #cardmodal ul li {
+        font-size: 16px;
+    }
+
+    #cardmodal .card-button {
+        height: 56px;
+        font-size: 18px;
+        border-radius: 14px;
+    }
 }
