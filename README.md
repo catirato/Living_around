@@ -1,15 +1,15 @@
 # 🌍 Living Around
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=for-the-badge\&logo=github)](https://catirato.github.io/Living_around/)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge\&logo=html5\&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge\&logo=css3\&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge\&logo=bootstrap\&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-2ea44f?style=for-the-badge&logo=github)](https://catirato.github.io/Living_around/)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Status](https://img.shields.io/badge/status-completed-success?style=for-the-badge)
 
-Experiência web multipágina inspirada no lifestyle de **digital nomads**, pensada para cruzar **trabalho remoto, viagem, liberdade de movimento e descoberta de destinos** através de uma identidade visual ligada ao universo **van life** 🚐🌍
+A multi-page web experience inspired by the **digital nomad lifestyle**, connecting **remote work, travel, freedom of movement, and destination discovery** through a visual identity linked to the **van life** universe 🚐🌍
 
-🔗 **Live demo:**
+🔗 **Live demo:**  
 https://catirato.github.io/Living_around/
 
 ---
@@ -20,84 +20,83 @@ https://catirato.github.io/Living_around/
 
 ---
 
-# 📖 Sobre o projeto
+# 📖 About the Project
 
-O **Living Around** foi desenvolvido no contexto do módulo de **Programação Web** do **CESAE Digital**, em **2025**.
+**Living Around** was developed as part of the **Web Programming** module at **CESAE Digital** in **2025**.
 
-A proposta foi criar uma aplicação **front-end estática** com identidade própria, forte componente visual e navegação simples entre diferentes áreas da experiência.
+The project consists of a **static front-end application** with a strong visual identity and simple navigation between different sections.
 
-Mais do que uma landing page, este projeto apresenta um pequeno **ecossistema de páginas ligadas entre si**:
+Rather than a single landing page, the project presents a small **ecosystem of interconnected pages**, including:
 
-* homepage
-* alojamento
-* locais
-* contacto
-* detalhe de produto
+- Homepage  
+- Accommodation  
+- Locations  
+- Contact page  
+- Product detail view  
 
-O objetivo foi construir uma interface coerente, com **storytelling visual, hierarquia clara e pequenas interações em JavaScript** para tornar a navegação mais dinâmica.
-
----
-
-# ✨ Funcionalidades
-
-* 🏠 Homepage com **hero section**, navegação principal e chamadas para ação
-* 🚐 Página de **acomodação** com cards de carrinhas, preços e características
-* 📦 Página de **detalhe em formato modal** para uma opção de alojamento
-* 🌍 Página de **locais** com seleção de país e cidade
-* 🔀 **Redirecionamento automático** para uma página de destino específica
-* 📍 Página dedicada ao **Porto** com mapa incorporado e contactos locais
-* 📩 Página de **contactos com formulário** e feedback visual de envio
-* 📱 **Menu mobile responsivo** com `<details>` e `<summary>`
+The goal was to build a coherent interface with **visual storytelling, clear hierarchy, and small JavaScript interactions** to improve the navigation experience.
 
 ---
 
-# 🧰 Stack utilizada
+# ✨ Features
 
-| Tecnologia        | Utilização                 |
-| ----------------- | -------------------------- |
-| **HTML5**         | Estrutura das páginas      |
-| **CSS3**          | Estilo visual              |
-| **Bootstrap 5.3** | Grelha e componentes       |
-| **JavaScript**    | Interações e comportamento |
-| **Google Fonts**  | Tipografia                 |
-
----
-
-# 🎨 Direção visual
-
-O projeto foi pensado com uma abordagem mais **editorial e atmosférica** do que funcional no sentido clássico de produto.
-
-Elementos principais da identidade visual:
-
-* 📷 **Imagens de grande escala** para reforçar contexto e emoção
-* 🔤 Combinação tipográfica entre **serif e sans-serif geométrica**
-* 🧱 **Blocos visuais amplos** com contraste forte
-* 🧭 Navegação direta entre secções principais
-* 🌲 Estética associada a **liberdade, estrada, natureza e trabalho remoto**
+- 🏠 Homepage with **hero section**, navigation, and call-to-action elements  
+- 🚐 **Accommodation page** with van cards, prices, and features  
+- 📦 **Modal detail view** for accommodation options  
+- 🌍 **Locations page** with country and city selection  
+- 🔀 **Automatic redirection** to a destination page  
+- 📍 Dedicated **Porto page** with embedded map and local contacts  
+- 📩 **Contact page with form** and visual submission feedback  
+- 📱 **Responsive mobile navigation** using `<details>` and `<summary>`
 
 ---
 
-# ⚙️ Destaques técnicos
+# 🧰 Tech Stack
 
-* 🎨 Estilo centralizado num único ficheiro
+| Technology | Purpose |
+|-----------|--------|
+| **HTML5** | Page structure |
+| **CSS3** | Styling and layout |
+| **Bootstrap 5.3** | Grid system and components |
+| **JavaScript** | Interactions and behaviour |
+| **Google Fonts** | Typography |
+
+---
+
+# 🎨 Visual Direction
+
+The project follows a more **editorial and atmospheric approach**, focusing on visual storytelling.
+
+Main visual elements include:
+
+- 📷 Large imagery to create context and emotion  
+- 🔤 Combination of **serif and geometric sans-serif typography**  
+- 🧱 Large visual sections with strong contrast  
+- 🧭 Simple and direct navigation  
+- 🌲 Aesthetic inspired by **freedom, travel, nature, and remote work**
+
+---
+
+# ⚙️ Technical Highlights
+
+- Centralized styling in a single file  
   `style_index.css`
 
-* 📄 Layout **multipágina com consistência visual**
+- **Multi-page layout** with consistent design
 
-* 🧱 Uso de **Bootstrap** para grelha e utilitários
+- **Bootstrap grid and utilities**
 
-* ⚡ Interações simples em **JavaScript**
+- Simple **JavaScript interactions**
+  - automatic redirection  
+  - form confirmation  
 
-  * redirecionamento automático
-  * confirmação de formulário
-
-* 🌐 Estrutura **estática pronta para GitHub Pages**
+- **Static structure ready for GitHub Pages**
 
 ---
 
-# 📂 Estrutura do projeto
+# 📂 Project Structure
 
-```text
+```
 Living_around/
 ├── index.html
 ├── Page_Acomodação.html
@@ -112,60 +111,60 @@ Living_around/
 
 ---
 
-# 🚀 Como correr localmente
+# 🚀 Running Locally
 
-Por ser um projeto **estático**, não existe build step.
+Since this is a **static project**, no build step is required.
 
-### 1️⃣ Clonar o repositório
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/catirato/Living_around.git
 ```
 
-### 2️⃣ Abrir o projeto
+### 2. Open the project
 
-Abrir o ficheiro:
+Open the file:
 
 ```
 index.html
 ```
 
-no browser.
+in your browser.
 
-### Opcional
+### Optional
 
-Usar um servidor local como:
+You can use a local development server such as:
 
-* **Live Server** (VS Code)
-* **Python Simple Server**
-
----
-
-# 📚 Aprendizagens
-
-Durante este projeto foram trabalhados vários conceitos de **desenvolvimento front-end**:
-
-* Estruturação de um **projeto multipágina**
-* Construção de **layouts responsivos**
-* Organização de **estilos centralizados**
-* Aplicação de **interações em JavaScript**
-* Desenvolvimento de uma **identidade visual coerente**
+- **Live Server** (VS Code)
+- **Python Simple Server**
 
 ---
 
-# 🔮 Próximos passos possíveis
+# 📚 What I Learned
 
-* Substituir **links placeholder** por conteúdo real
-* Melhorar **semântica e acessibilidade da interface**
-* Adicionar **validação mais robusta** ao formulário
-* Criar mais páginas de **detalhe para destinos e acomodações**
-* Otimizar **imagens e performance geral**
-* Evoluir o projeto para uma versão com **componentes reutilizáveis**
+This project helped develop several **front-end development skills**, including:
+
+- Structuring a **multi-page website**
+- Creating **responsive layouts**
+- Organizing **centralized CSS**
+- Adding **basic JavaScript interactions**
+- Building a **consistent visual identity**
 
 ---
 
-# 👩‍💻 Autora
+# 🔮 Possible Improvements
+
+- Replace **placeholder links** with real content  
+- Improve **semantic structure and accessibility**  
+- Add **stronger form validation**  
+- Create additional **destination and accommodation detail pages**  
+- Optimize **images and performance**  
+- Evolve the project using **reusable components**
+
+---
+
+# 👩‍💻 Author
 
 **Catarina Rato**
 
-Projeto desenvolvido no módulo de **Programação Web** do **CESAE Digital**.
+Project developed for the **Web Programming** module at **CESAE Digital**.
